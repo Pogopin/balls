@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Balls</title>
+	<style>
+		body{
+			margin: 0;
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.ball{
+			position: fixed;
+			width: 40px;
+			/* animation: spin 1s linear infinite; */
+		}
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+			
+			100% {
+				transform: rotate(360deg);
+				
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<input type="number" id="ballNumber"><br>
+		<button id="create-balls">Создать мячи</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
